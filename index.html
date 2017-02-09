@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript" src="calculator.js"></script>
+  <title>Payment Calculator</title>
+</head>
+<body>
+  <div>
+    <h1>Monthly Payment Calculator</h1>
+    <form name="monthlyPaymentCalculator">
+      <p>Monthly Payment Calculator:</p>
+      <p>Enter loan: <input type="text" name="enterLoan" id="loan" value="" size="25" /></p>
+      <p>Select interest rate: 
+        <select name="interestRate">
+          <option id="0.03">3%</option>
+          <option id="0.04">4%</option>
+          <option id="0.05">5%</option>
+        </select>
+      </p>
+      <p>
+        Select term:<br>
+        <input type="radio" id="10year" name="term" checked="checked" />10-year<br>
+        <input type="radio" id="15year" name="term" />15-year<br>
+        <input type="radio" id="30year" name="term" />30-year<br>
+      </p>
+      <p>Monthly payment is: 
+        <h3 id="mp"></h3>
+      </P>
+      <p>
+        <input type="button" value="Compute Using Javascript" name="compute" onClick="calculate()" />
+      </p>
+    </form>
+  </div>
+</body>
+</html>
